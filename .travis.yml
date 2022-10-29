@@ -24,7 +24,7 @@ script:
   - docker tag udagram-api-user asmaamosleh/udagram-api-user:v1
   - docker build -t reverseproxy ./reverseproxy
   - docker tag reverseproxy asmaamosleh/reverseproxy:v1
-  - docker build -t udagram-frontend ./udagram-frontend:v1
+  - docker build -t udagram-frontend ./udagram-frontend
   - docker tag udagram-frontend asmaamosleh/udagram-frontend:v1
 
 after_success:
